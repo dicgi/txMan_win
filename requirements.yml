@@ -1,0 +1,15 @@
+name: txman
+channels:
+  - conda-forge
+  - anaconda
+  - menpo
+  - bioconda
+  - defaults
+  - anaconda-fusion
+dependencies:
+  - python=3.5
+  - matplotlib
+  - imageio
+  - freeimage
+  - opencv3
+  - pywin32
