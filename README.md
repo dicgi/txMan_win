@@ -37,7 +37,9 @@ rem see the installation guide.
 rem execute txMan
 > txman
 ```
+
 ![txMan Header](_sourceimages/txMan_header.png)
+
 The anatomy of principal command is:
 
 *[**command**] [**flag**]*
@@ -67,7 +69,9 @@ The main command will work according to a flag. The flags basically determines t
 
 ### Filters
 Every time that a command is executed a *filter* will be required.
+
 ![txMan Filter](_sourceimages/txMan_filter.png)
+
 Filters are a way to make an accurate selection of the chosen group. The filters are:
  - **all** : All images on group will be selected.
  - **grey** : Only float and grayscale images will be selected, given a **threshold**.
@@ -75,7 +79,9 @@ Filters are a way to make an accurate selection of the chosen group. The filters
  - **regex** : The selection will be given by an *regular expression*.
 
 The filters *grey* and *color* needs a **threshold** to works.
+
 ![txMan Threshold](_sourceimages/txMan_threshold.png)
+
 Threshold is a float number parameter that delimits the value **r**, given by:
 $$
 r=\frac{1}{3mn}\sum^{m}_{i}\sum^{n}_{j}(|R_{ij} - G_{ij}| + |R_{ij} - B_{ij}| + |G_{ij} - B_{ij}|)
@@ -84,5 +90,7 @@ If **r** is less than *threshold* value then *grey* will be true. Otherwise *col
 
 ## Color convert
 Every time a command *create [flag]* is executed it will be asked if you want to convert the colorspace. If the choice is *yes* then original colorspace and destination colorspace will be required.
+
 ![txMan Color Convert](_sourceimages/txMan_convert.png)
+
 The possible values are "**linear**", "**srgb**" (sRGB) and "**rec**" (Rec709). For more information click [here](https://support.solidangle.com/display/AFMUG/Gamma+Correction+and+Linear+Workflow).
