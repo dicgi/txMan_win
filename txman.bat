@@ -45,39 +45,43 @@ echo.
 echo.
 echo # basic commands
 echo.
-echo  * help                help menu.
-echo  * clear               clear screen.
-echo  * exit                leave txMan.
+echo  * help                Help menu.
+echo  * clear               Clear screen.
+echo  * exit                Leave txMan.
 echo.
-echo # principal commands
+echo # main commands
 echo.
-echo  * list                lists image files on screen.
-echo  * log                 lists image files into a output.
-echo                        archive.
-echo  * create              create tx command.
-echo  * remove              remove tx command.
+echo  * list                Lists image files and prints on
+echo                        the screen.
+echo  * log                 Lists image files and saves in
+echo                        a log file.
+echo  * create              Creates *tx* files with the same
+echo                        image name.
+echo  * remove              Removes tx files.
 echo.
 echo # command flags
 echo.
-echo  * select              files and directories must be
-echo                        specified and separated by white
-echo                        spaces. directories must have "\"
-echo                        at the end.
-echo  * here                all files in current directory
-echo                        will be analysed.
-echo  * tree                all files in current directory
-echo                        tree will be analysed.
+echo  * select              The command will be applied only
+echo                        on selected images or directories.
+echo                        A *selection* list will be required
+echo                        and the components must be separated
+echo                        by white spaces. Directories must
+echo                        have "\" at the end.
+echo  * here                The command will be applied on all
+echo                        images in current directory.
+echo  * tree                The command will be applied on all
+echo                        images and dependencies in current
+echo                        directory.
 echo.
 echo # command filters
 echo.
-echo  * all                 all image files will be selected.
-echo  * grey                only monochromatic (grey) image
-echo                        files will be selected given a
-echo                        threshold.
-echo  * color               only polychromatic (colored) image
-echo                        files will be selected given a
-echo                        threshold.
-echo  * regex               selects given a regular expression.
+echo  * all                 All images on group will be selected.
+echo  * grey                Only float and grayscale images will
+echo                        be selected, given a threshold.
+echo  * color               Only colored or polychromatic images
+echo                        will be selected, given a threshold.
+echo  * regex               The selection will be given by an
+echo                        regular expression.
 echo.
 goto main
 
