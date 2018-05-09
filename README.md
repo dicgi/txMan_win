@@ -84,11 +84,9 @@ The filters *grey* and *color* needs a **threshold** to works.
 
 Threshold is a float number parameter that delimits the value **r**, given by:
 
-$$
-r=\frac{1}{3mn}\sum^{m}_{i}\sum^{n}_{j}(|R_{ij} - G_{ij}| + |R_{ij} - B_{ij}| + |G_{ij} - B_{ij}|)
-$$
+![txMan Threshold](_sourceimages/txMan_thresholdValue.png)
 
-If **r** is less than *threshold* value then *grey* will be true. Otherwise *color* will be true.
+Where *R*, *G* and *B* represents the image color channels. If **r** is less than *threshold* value then *grey* will be true. Otherwise *color* will be true.
 
 ## Color convert
 Every time a command *create [flag]* is executed it will be asked if you want to convert the colorspace. If the choice is *yes* then original colorspace and destination colorspace will be required.
