@@ -83,9 +83,11 @@ The filters *grey* and *color* needs a **threshold** to works.
 ![txMan Threshold](_sourceimages/txMan_threshold.png)
 
 Threshold is a float number parameter that delimits the value **r**, given by:
+
 $$
 r=\frac{1}{3mn}\sum^{m}_{i}\sum^{n}_{j}(|R_{ij} - G_{ij}| + |R_{ij} - B_{ij}| + |G_{ij} - B_{ij}|)
 $$
+
 If **r** is less than *threshold* value then *grey* will be true. Otherwise *color* will be true.
 
 ## Color convert
