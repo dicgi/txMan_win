@@ -1,1 +1,2 @@
-*.bat linguist-language=Batchfile
+* linguist-vendored
+*.bat linguist-vendored=false
